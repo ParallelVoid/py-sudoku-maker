@@ -1,0 +1,18 @@
+[project]
+name = "py-sudoku"
+version = "1.0.0"
+requires-python = ">=3.7"
+authors = [
+  {name = "Timothy Solnyshkin", email = "timothy.solnyshkin@gmail.com"},
+]
+description = "A Python package that creates a completed Sudoku grid"
+readme = "README.md"
+keywords = ["SUDOKU"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = ""
