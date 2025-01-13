@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "py-sudoku"
 version = "1.0.0"
@@ -15,4 +19,3 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = ""
