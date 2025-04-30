@@ -1,9 +1,5 @@
-[build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "py-sudoku"
+name = "py-sudoku-maker"
 version = "1.0.0"
 requires-python = ">=3.7"
 authors = [
@@ -12,12 +8,8 @@ authors = [
 description = "A Python package that creates a completed Sudoku grid"
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["SUDOKU"]
-classifiers = [
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-]
 
 [project.urls]
-Homepage = "https://github.com/ParallelVoid/py-sudoku"
+Homepage = "https://github.com/ParallelVoid/py-sudoku-maker/"
+
+
