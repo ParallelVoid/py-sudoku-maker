@@ -13,7 +13,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: upgrade python
         uses: actions/setup-python@v5
-      # verify python version
-      - name: unit_tests
+      - name: install uv
+        uses: astral-sh/setup-uv@v5
+      - name: install pytest
+        run: uv add --dev pytest
+      - name: unit tests
         run: |
-          python3 -m py_sudoku_maker.test_sudoku_maker
+          uv run pytest
