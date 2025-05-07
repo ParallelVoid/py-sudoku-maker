@@ -1,0 +1,19 @@
+name: sudoku_maker_tests
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      # checks out repo and upgrades python version
+      - uses: actions/checkout@v4
+      - name: upgrade python
+        uses: actions/setup-python@v5
+      # verify python version
+      - name: unit_tests
+        run: |
+          python3 -m py_sudoku_maker.test_sudoku_maker
