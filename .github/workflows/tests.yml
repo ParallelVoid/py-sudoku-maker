@@ -6,7 +6,7 @@ on:
       - 'main'
 
 jobs:
-  tests:
+  tests-linter:
     runs-on: ubuntu-latest
     steps:
       # checks out repo and upgrades python version
@@ -15,8 +15,11 @@ jobs:
         uses: actions/setup-python@v5
       - name: install uv
         uses: astral-sh/setup-uv@v5
-      - name: install pytest
-        run: uv add --dev pytest
+      - name: install deps
+        run: uv add --dev pytest pylint
+      - name: linter
+        run: |
+          uv run pylint py_sudoku_maker.__init__
       - name: unit tests
         run: |
           uv run pytest
