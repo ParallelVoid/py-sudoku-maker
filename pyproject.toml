@@ -14,6 +14,7 @@ Homepage = "https://github.com/ParallelVoid/py-sudoku-maker/"
 
 [dependency-groups]
 dev = [
+    "pylint>=2.13.9",
     "pytest>=7.4.4",
     "pytest-cov>=4.1.0",
 ]
