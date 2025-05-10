@@ -1,4 +1,8 @@
 # py-sudoku-maker
+[![PyPI version](https://img.shields.io/pypi/v/py-sudoku-maker)](https://pypi.org/project/py-sudoku-maker/)
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
+![coverage](https://img.shields.io/badge/coverage-83%25-yellowgreen)
+![Unit Tests](https://github.com/ParallelVoid/py-sudoku-maker/actions/workflows/tests.yml/badge.svg)
 
 A Python package for generating Sudoku puzzles.
 
